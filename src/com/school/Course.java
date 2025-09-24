@@ -9,6 +9,14 @@ public class Course implements Storable {
         this.courseName = courseName;
     }
 
+    public int getCourseId() {
+        return courseId;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
     @Override
     public String toDataString() {
         return courseId + "," + courseName;
